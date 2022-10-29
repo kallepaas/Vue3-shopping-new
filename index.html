@@ -15,10 +15,12 @@
       <div class="product-display">
         <div class="product-container">
           <div class="product-image">
-            <!-- image goes here -->
+            <!-- vbind:src võib lühendada :src -->
+            <img v-bind:src="image">
           </div>
           <div class="product-info">
             <h1>{{ product }}</h1>
+            <a :href="url" target="_blank">Voco koduleht</a>
           </div>
         </div>
       </div>
